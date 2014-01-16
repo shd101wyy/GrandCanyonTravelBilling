@@ -7,10 +7,10 @@
 // eg
 var money = 
 {
-	"LT": [16, 15, 17],
-	"Yuta": [15, 17],
-	"Yan": [10],
-	"Yiyi": []
+	"LT": [25, 25, 17.6, 17.79, 1244, 41],
+	"Yuta": [23.63, 15],
+	"Yan": [12.20, 32.33, 16.5],
+	"Yiyi": [20]
 }
 
 var calculatingBills = function(money_data)
@@ -77,9 +77,10 @@ var calculatingBills = function(money_data)
 	*/
 	var check_done = function(data)
 	{
+
 		for(var i in data)
 		{
-			if(data[i]!=0)
+			if(data[i]>=0.1)
 				return false;
 		}
 		return true;
@@ -117,3 +118,5 @@ var calculatingBills = function(money_data)
 
 
 calculatingBills(money);
+
+console.log("Finished")

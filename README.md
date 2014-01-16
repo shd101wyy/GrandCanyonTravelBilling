@@ -1,4 +1,5 @@
 闲着无聊做了这个算钱的脚本  
+```
 eg  
 	money =   
 	{  
@@ -15,7 +16,7 @@ eg
   
 调用 calculateBills 函数进行钱数统计和分配  
  calculateBills(money)  
-  
+  ```
  以下为结果  
   =>  
 ```
